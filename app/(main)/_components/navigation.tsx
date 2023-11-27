@@ -135,7 +135,7 @@ const Navigation = () => {
     <>
       <aside
         className={cn(
-          "group/sidebar h-full bg-secondary overflow-y-auto relative flex w-60 flex-col z-[99999]",
+          "group/sidebar h-full bg-secondary overflow-y-auto relative flex w-60 flex-col ", //z-[99999]
           isResetting && "transition-all ease-in-out duration-300",
           isMobile && "w-0"
         )}
@@ -189,19 +189,18 @@ const Navigation = () => {
         )}
       >
         {!!params.documentId ? (
-          <Navbar
-            isCollapsed={isCollapsed}
-            onResetWidth={resetWidth}
-          />
-        ) : (<nav className='bg-transparent px-3 py-2 w-full'>
-          {isCollapsed && (
-            <MenuIcon
-              onClick={resetWidth}
-              className='h-6 w-6 text-muted-foreground'
-              role='button'
-            />
-          )}
-        </nav>)}
+          <Navbar isCollapsed={isCollapsed} onResetWidth={resetWidth} />
+        ) : (
+          <nav className='bg-transparent px-3 py-2 w-full'>
+            {isCollapsed && (
+              <MenuIcon
+                onClick={resetWidth}
+                className='h-6 w-6 text-muted-foreground'
+                role='button'
+              />
+            )}
+          </nav>
+        )}
       </div>
     </>
   );

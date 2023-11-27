@@ -52,7 +52,7 @@ export const UserItem = () => {
             </div>
             <div className='space-y-1'>
               <p className='text-sm line-clamp-1'>
-                {user?.fullName}&apos;s Notion
+                {user?.fullName}&apos;s NoteIt
               </p>
             </div>
           </div>
