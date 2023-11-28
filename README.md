@@ -9,3 +9,4 @@ NoteIt uses:
 - LucideReact for Icons
 - ShadCN UI Components
 - Edgestore for uploading files
+- TailwindCss for styling
