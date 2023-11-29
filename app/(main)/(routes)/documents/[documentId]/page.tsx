@@ -4,7 +4,14 @@ import { Cover } from "@/components/cover";
 import { Toolbar } from "@/components/toolbar";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
-import { useQuery } from "convex/react";
+import { useMutation, useQuery } from "convex/react";
+import { Skeleton } from "@/components/ui/skeleton";
+import Editor from "@/components/editor";
+
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
+
+import { Content } from "next/font/google";
 
 interface DocumentIdPageProps {
   params: {
@@ -13,12 +20,40 @@ interface DocumentIdPageProps {
 }
 
 const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
+  const Editor = useMemo(
+    () => dynamic(() => import("@/components/editor")),
+    []
+  );
+
   const document = useQuery(api.documents.getById, {
     documentId: params.documentId,
   });
 
+  const update = useMutation(api.documents.update);
+
+  const onChange = (content: string) => {
+    update({
+      id: params.documentId,
+      content,
+    });
+  };
+
   if (document === undefined) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Cover.Skeleton />
+        <div className='md:max-w-3xl lg:max-w-4xl mx-auto mt-10'>
+          <div>
+            <div className='space-y-4 pl-8 pt-4'>
+              <Skeleton className='h-14 w-[50%]' />
+              <Skeleton className='h-4 w-[80%]' />
+              <Skeleton className='h-4 w-[40%]' />
+              <Skeleton className='h-4 w-[60%]' />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (document === null) {
@@ -30,6 +65,7 @@ const DocumentIdPage = ({ params }: DocumentIdPageProps) => {
       <Cover url={document.coverImage} />
       <div className='md:max-w-3xl lg:max-w-4xl mx-auto'>
         <Toolbar initialData={document} />
+        <Editor onChange={onChange} initialContent={document.content} />
       </div>
     </div>
   );

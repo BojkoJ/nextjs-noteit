@@ -7,3 +7,4 @@ Uses:
 - TypeScript
 - LucideReact
 - ShadCN UI Components
+- BlockNote text editor
