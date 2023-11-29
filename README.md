@@ -49,7 +49,7 @@
     <h3>Getting Started</h3>
     <p>To run NoteIt on your local enviroment, follow these steps:</p>
     <ol>
-      <li>Clone the repository: <code>git clone <repository_url></code></li>
+      <li>Clone the repository: <code>git clone [repository_url] </code></li>
       <li>Install dependencies: <code>npm install</code></li>
       <li>Create a <code>.env.local</code> file and add your Convex,Clerk and EdgeStore credentials</li>
       <li>Start the development server: <code>npm run dev</code></li>
