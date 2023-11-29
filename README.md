@@ -3,33 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NoteIt: Your Next-Gen Note-Taking App</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-    h1, h2, h3 {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      margin-top: 10px;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 5px;
-    }
-    a {
-      text-decoration: none;
-      color: #007bff;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -48,14 +21,14 @@
     </ul>
     <h3>Technologies</h3>
     <ul>
-      <li>**Next.js 13:** A powerful React framework for building server-side rendered applications</li>
-      <li>**Convex Real-time database:** A scalable and reliable database for real-time data synchronization</li>
-      <li>**Clerk Authentication:** A secure and user-friendly authentication system</li>
-      <li>**TypeScript:** A superset of JavaScript that ensures type safety</li>
-      <li>**LucideReact:** A comprehensive icon library for React applications</li>
-      <li>**ShadCN UI Components:** A collection of reusable and customizable UI components</li>
-      <li>**EdgeStore:** A cloud-based storage solution for image uploading</li>
-      <li>**BlockNote text editor:** A versatile text editor for creating structured notes</li>
+      <li><b>Next.js 13:</b> A powerful React framework for building server-side rendered applications</li>
+      <li><b>Convex Real-time database:</b> A scalable and reliable database for real-time data synchronization</li>
+      <li><b>Clerk Authentication:</b> A secure and user-friendly authentication system</li>
+      <li><b>TypeScript:</b> A superset of JavaScript that ensures type safety</li>
+      <li><b>LucideReact:</b> A comprehensive icon library for React applications</li>
+      <li><b>ShadCN UI Components:</b> A collection of reusable and customizable UI components</li>
+      <li><b>EdgeStore:</b> A cloud-based storage solution for image uploading</li>
+      <li><b>BlockNote text editor:</b> A versatile text editor for creating structured notes</li>
     </ul>
     <h3>User Experience</h3>
     <p>NoteIt provides a seamless and intuitive user experience, allowing you to effortlessly capture, organize, and share your ideas.</p>
