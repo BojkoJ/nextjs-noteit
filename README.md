@@ -33,13 +33,13 @@
     <h3>User Experience</h3>
     <p>NoteIt provides a seamless and intuitive user experience, allowing you to effortlessly capture, organize, and share your ideas.</p>
     <h4>Create and Manage Notes</h4>
-    <p>Simply click the "New Note" button to start jotting down your thoughts. Edit, organize, and delete notes with ease.</p>
+    <p>Simply click the "New Page" button to start jotting down your thoughts. Edit, organize, and delete notes with ease.</p>
     <h4>Customize Note Appearance</h4>
     <p>Personalize your notes by setting icons and background images that reflect your style or content.</p>
     <h4>Structure Your Notes</h4>
     <p>Utilize the BlockNote text editor to create structured notes with headings, lists, and code blocks.</p>
     <h4>Share Notes</h4>
-    <p>Collaborate with others by sharing notes with them. Manage permissions to grant different levels of access.</p>
+    <p>Collaborate with others by sharing notes with them.</p>
     <h4>Organize with Sub-notes</h4>
     <p>Create sub-notes (child notes) to organize complex information in a hierarchical structure.</p>
     <h4>Search and Find</h4>
@@ -47,7 +47,7 @@
     <h4>Light and Dark Modes</h4>
     <p>Switch between light and dark mode to suit your preferred viewing experience.</p>
     <h3>Getting Started</h3>
-    <p>To get started with NoteIt, follow these steps:</p>
+    <p>To run NoteIt on your local enviroment, follow these steps:</p>
     <ol>
       <li>Clone the repository: <code>git clone <repository_url></code></li>
       <li>Install dependencies: <code>npm install</code></li>
