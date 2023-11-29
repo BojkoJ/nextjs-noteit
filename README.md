@@ -53,7 +53,7 @@
       <li>Install dependencies: <code>npm install</code></li>
       <li>Create a <code>.env.local</code> file and add your Convex,Clerk and EdgeStore credentials</li>
       <li>Start the development server: <code>npm run dev</code></li>
-      <li>Generate convex functions: <code>npx covex dev</code></li>
+      <li>Generate convex functions: <code>npx convex dev</code></li>
       </ol>
   </div>
 </body>
