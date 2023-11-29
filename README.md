@@ -8,3 +8,4 @@ Uses:
 - LucideReact
 - ShadCN UI Components
 - BlockNote text editor
+- EdgeStore for image uploading
