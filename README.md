@@ -7,7 +7,7 @@
 <body>
   <div class="container">
     <h1>NoteIt</h1>
-    <h2>Your Next-Gen Note-Taking App</h2>
+    <h2>Next-Gen Note-Taking App</h2>
     <p>NoteIt is a Next.js application that provides a user-friendly platform for taking, organizing, and sharing notes. Inspired by Notion, NoteIt offers a comprehensive set of features to streamline your note-taking experience.</p>
     <h3>Key Features</h3>
     <ul>
